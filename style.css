@@ -73,14 +73,34 @@ body {
 }
 
 .header nav ul li a {
-    color: #00FFFF; /* Blue button color */
+    color: #00FFFF; /* Text color */
     text-decoration: none;
-    padding: 0.5em 1em;
-    transition: color 0.3s;
+    padding: 1em; /* Adjusted padding to make the highlight cover the full height */
+    transition: color 0.3s, background-color 0.3s; /* Add background color transition */
+    position: relative; /* Needed for the box highlight effect */
+    z-index: 1; /* Ensure the text is above the highlight box */
+}
+
+.header nav ul li a::before {
+    content: ''; /* Empty content for the pseudo-element */
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Positioning relative to the parent */
+    left: 0;
+    width: 100%; /* Full width of the parent */
+    height: 100%; /* Full height of the parent */
+    background-color: #00FFFF; /* Highlight box color */
+    opacity: 0; /* Start with no opacity */
+    transition: opacity 0.3s; /* Smooth transition */
+    z-index: -1; /* Place it behind the text */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.header nav ul li a:hover::before {
+    opacity: 0.2; /* Slightly visible highlight box on hover */
 }
 
 .header nav ul li a:hover {
-    color: #0dd3d3; /* Darker blue on hover */
+    color: #0dd3d3; /* Change text color on hover */
 }
 
 /* Hero Section Styles */
