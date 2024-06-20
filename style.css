@@ -384,7 +384,7 @@ body {
     font-size: 1rem;
     color: #fff;
     text-decoration: none;
-    background: linear-gradient(90deg, #00C9FF, #92FE9D);
+    background-color: #0fb8b8;
     border: none;
     border-radius: 20px;
     transition: background 0.3s, transform 0.3s;
@@ -411,7 +411,7 @@ body {
 }
 
 .cool-btn:hover {
-    background: linear-gradient(90deg, #0fb8b8, #68d391);
+    background-color: #0fb8b8;
     transform: scale(1.05);
 }
 
