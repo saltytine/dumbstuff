@@ -475,6 +475,75 @@ body {
     transform: scale(1.05); /* Slightly scale up on hover */
 }
 
+/* Tools and Packages Section Styles */
+.tools-packages {
+    background-color: #1a1a1a;
+    padding: 5em 0;
+    text-align: center;
+}
+
+.tools-packages h2 {
+    color: #fff;
+    font-family: ppheehee;
+    font-size: 2.3rem;
+    margin-bottom: 1em;
+}
+
+.tool-item {
+    background-color: #333;
+    padding: 1.5em;
+    border-radius: 8px;
+    margin-bottom: 3em;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, outline 0.3s;
+    outline: 2px solid transparent;
+    color: inherit;
+}
+
+.tool-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    outline-color: #00FFFF;
+}
+
+.tool-item img.tool-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.tool-item h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+}
+
+.tool-item p {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+.tool-item .btn {
+    display: inline-block;
+    background-color: #0dd3d3;
+    color: #fff;
+    padding: 0.5em 1em;
+    font-family: wowww;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+    border: 2px solid #0dd3d3;
+    margin-right: 1em; /* Add some space between buttons */
+}
+
+.tool-item .btn:hover {
+    background-color: #0fb8b8;
+    border-color: #0fb8b8;
+    transform: scale(1.05);
+}
+
 /* Footer Styles */
 .footer {
     background-color: #222;
