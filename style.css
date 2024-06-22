@@ -326,7 +326,7 @@ body {
     background-color: #333;
     padding: 1em;
     border-radius: 8px;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
     text-align: left;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s, outline 0.3s;
